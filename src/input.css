@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card { 
+    @apply bg-white mt-10 rounded-lg overflow-hidden shadow-md relative
+}
+
+.btn{
+    @apply rounded-full p-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider
+}

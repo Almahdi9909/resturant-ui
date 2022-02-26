@@ -9,63 +9,100 @@
   <title>Document</title>
 </head>
 
-<body class="text-gray-600">
-  <div>
-    <div>
+<body class="text-gray-600 font-body">
+  <div class="grid md:grid-cols-12 lg:grid-cols-12 md:h-full lg:h-full md:grid-row-12 lg:md:grid-row-12">
+    <div class="md:col-span-2 md:grid-row-12 lg:md:grid-row-12">
       <nav>
         <div>
-          <h1 class="font-bold uppercase p-4">
-            <a href="/">Food</a>
+          <h1 class="font-bold uppercase p-4  border-gray-100">
+            <a class="btn" href="/">Food</a>
           </h1>
         </div>
         <ul>
           <li>
-            <a href="#" class="font-bold">
+            <a href="#" class="font-bold btn">
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#" class="font-bold">
+            <a href="#" class="font-bold btn">
               <span>Contact</span>
             </a>
           </li>
         </ul>
       </nav>
     </div>
-    <main class="px-16 py-6">
-      <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+    <main class="px-16 py-6 bg-gray-100 rounded-lg lg:col-span-10 md:col-span-10 row-span-6">
+      <div class="flex justify-center md:justify-end ">
+        <a href="#" class="text-primary border-primary md:border-2 btn">Log in</a>
+        <a href="#" class="text-primary ml-2  border-primary md:border-2 btn">Sign up</a>
       </div>
       <header>
         <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
         <h2 class="text-2x font-semibold">For u</h2>
       </header>
-      <div>
+      <div class="mt-8 ">
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Leates Recipes</h4>
-        <div class="mt-8">
-          <img src="../public/images/pasta.jpg" alt="pasta">
-          <div class="text-gray-500">
-            <span>5 Bean chili stew</span>
+      </div>
+      <section class="grid md:grid-cols-3 lg:grid-cols-3 gap-10">
+          <div class="card">
+            <img class="w-full h-32 sm:h-48 object-cover" src="../public/images/pasta.jpg" alt="pasta">
+            <div class="text-gray-500 m-4">
+              <span class="font-bold block">5 Bean chili stew</span>
+              <div class="flex justify-between">
+                <div>
+                  <span class="text-sm text-gray-500">Delicous</span>
+                </div>
+                <div class="bg-secondary-100 text-secondary-200 sm:w-20 rounded-full  absolute top-0 p-2 ml-2 mt-2 flex justify-between">
+                  <svg class="w-4 " xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span
+                    class="table text-sm text-ellipsis  text-gray-500 text-center mt-auto mb-auto ml-0 mr-0 overflow-hidden">25min</span>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="card">
+            <img class="w-full h-32 sm:h-48 object-cover" src="../public/images/pasta.jpg" alt="pasta">
+            <div class="text-gray-500 m-4">
+              <span class="font-bold block">5 Bean chili stew</span>
+              <div class="flex justify-between">
+                <div>
+                  <span class="text-sm text-gray-500">Delicous</span>
+                </div>
+                <div class="bg-secondary-100 text-secondary-200 sm:w-20 rounded-full  absolute top-0 p-2 ml-2 mt-2">
+                  <span
+                    class="table text-sm text-ellipsis  text-gray-500 text-center mt-auto mb-auto ml-0 mr-0 overflow-hidden">25
+                    min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="w-full h-32 sm:h-48 object-cover" src="../public/images/pasta.jpg" alt="pasta">
+            <div class="text-gray-500 m-4">
+              <span class="font-bold block">5 Bean chili stew</span>
+              <div class="flex justify-between">
+                <div>
+                  <span class="text-sm text-gray-500">Delicous</span>
+                </div>
+                <div class="bg-secondary-100 text-secondary-200 sm:w-20 rounded-full  absolute top-0 p-2 ml-2 mt-2">
+                  <span
+                    class="table text-sm text-ellipsis  text-gray-500 text-center mt-auto mb-auto ml-0 mr-0 overflow-hidden">25
+                    min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <div class="flex justify-center mt-4">
+        <div class="bg-secondary-100 text-secondary-200 btn">
+          Load more
         </div>
       </div>
-      <div class="mt-8">
-        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
-        <div>
-          <img src="" alt="">
-          <div>
-            <span>5 Bean chili stew</span>
-          </div>
-        </div>
-      </div>
-        <div>
-          <div>
-            Load more
-          </div>
-        </div>
     </main>
-  </div>
   </div>
 </body>
 
